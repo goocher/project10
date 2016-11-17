@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#cfc8cf"
+             tools:context="fragment.zhibo.fragment.CaiYiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_caiyi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_caiyi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/flowToTop"
+        android:src="@mipmap/ic_launcher"
+
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/bottom_text_caiyi"
+
+        android:text="没有更多..."
+        android:gravity="center"
+        android:background="#fff"
+        android:visibility="invisible"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="20dp"/>
+</FrameLayout>

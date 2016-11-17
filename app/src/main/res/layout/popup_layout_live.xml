@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="340dp"
+    >
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewpager_gift_live"
+
+    android:layout_width="match_parent"
+    android:layout_height="300dp"></android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="余额0"
+            android:layout_centerVertical="true"
+            android:id="@+id/yue_gift_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/chongzhi_gift_live"
+            android:text="充值"
+            android:background="#ff0"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>

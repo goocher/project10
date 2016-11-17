@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="420dp"
+              >
+<RelativeLayout
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/icon_caiyi_item"
+        android:src="@mipmap/moneny"
+        android:layout_centerVertical="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/nickName_caiyi_item"
+        android:text="tom"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/icon_caiyi_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/city_caiyi_item"
+        android:textColor="#bfb4bf"
+        android:text="北京"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/icon_caiyi_item"
+        android:layout_below="@id/nickName_caiyi_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<TextView
+    android:id="@+id/personCount"
+    android:text="998"
+    android:drawableLeft="@mipmap/icon_by_user"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/cover_caiyi_item"
+        android:src="@mipmap/add_album_cover"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

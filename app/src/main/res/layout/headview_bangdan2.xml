@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/icon1_nearbyPerson"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/value1"
+            android:text="2222"
+            android:background="#668e7d8e"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_above="@id/value1"
+            android:paddingLeft="10dp"
+            android:background="#668e7d8e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nickName1_nearbyPerson"
+                android:text="hello"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+
+                android:layout_toRightOf="@+id/nickName1_nearbyPerson"
+                android:id="@+id/container_gender1_nearbyPerson"
+                android:background="#e687bb"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="20dp">
+                <ImageView
+                    android:id="@+id/gender1_nearbyPerson"
+                    android:src="@mipmap/female"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:text="20"
+                    android:id="@+id/age1_nearbyperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/star1_nearbyPerson"
+                android:text="2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/container_gender1_nearbyPerson"
+                android:drawableLeft="@mipmap/star"
+                android:background="#6cc0f1"
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/vip1_nearbyperson"
+                android:text="VIP"
+                android:layout_toRightOf="@id/star1_nearbyPerson"
+                android:background="#dcefe33e"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_weight="1"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/icon_nearbyPerson"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/value"
+            android:text="2222"
+            android:background="#668e7d8e"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_above="@id/value"
+            android:paddingLeft="10dp"
+            android:background="#668e7d8e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nickName_nearbyPerson"
+                android:text="hello"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+
+                android:layout_toRightOf="@+id/nickName_nearbyPerson"
+                android:id="@+id/container_gender_nearbyPerson"
+                android:background="#e687bb"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="20dp">
+                <ImageView
+                    android:id="@+id/gender_nearbyPerson"
+                    android:src="@mipmap/female"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:text="20"
+                    android:id="@+id/age_nearbyperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/star_nearbyPerson"
+                android:text="2"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/container_gender_nearbyPerson"
+                android:drawableLeft="@mipmap/star"
+                android:background="#6cc0f1"
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/vip_nearbyperson"
+                android:text="VIP"
+                android:layout_toRightOf="@id/star_nearbyPerson"
+                android:background="#dcefe33e"
+                android:visibility="visible"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

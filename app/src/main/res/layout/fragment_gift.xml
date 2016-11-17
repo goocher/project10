@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:background="#791e1e1d"
+             android:layout_width="match_parent"
+             android:layout_height="240dp"
+             tools:context="com.gooch.showtogether.GiftFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/chongzhi"
+       android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="余额0"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:id="@+id/yue_gift_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/chongzhi_gift_live"
+            android:text="充值"
+            android:background="#ff0"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gridView_gift"
+        android:layout_above="@id/chongzhi"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"></GridView>
+</RelativeLayout>

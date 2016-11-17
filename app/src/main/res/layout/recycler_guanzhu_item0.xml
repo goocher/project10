@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/icon_guanzhu_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/moneny"/>
+
+        <TextView
+            android:id="@+id/nickName_guanzhu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/icon_guanzhu_item"
+            android:text="tom"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/city_guanzhu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nickName_guanzhu_item"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/icon_guanzhu_item"
+            android:text="北京"
+            android:textColor="#bfb4bf"/>
+
+        <TextView
+            android:id="@+id/personCount_guanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_by_user"
+            android:text="998"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cover_guanzhu_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/add_album_cover"
+        />
+
+</LinearLayout>

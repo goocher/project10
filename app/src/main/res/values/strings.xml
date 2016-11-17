@@ -1,0 +1,97 @@
+﻿<resources>
+    <string name="app_name">ShowTogether</string>
+ <string name="action_settings">Settings
+    </string>
+
+    <string name="hide_danmaku">hide</string>
+    <string name="show_danmaku">show</string>
+    <string name="pause_danmaku">pause</string>
+    <string name="resume_danmaku">resume</string>
+    <string name="send_danmaku">发送一条(纯文字)</string>
+    <string name="send_danmaku_image_text">发送一条(图文)</string>
+    <string name="send_danmakus">定时发送</string>
+    <string name="cancel_sending_danmakus">取消定时</string>
+
+    <string name="release">release</string>
+    <string name="rotate">旋转屏幕</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="zhibotitle">
+
+        <item>推荐</item>
+        <item>热门</item>
+        <item>才艺</item>
+        <item>关注</item>
+        <item>新人</item>
+        <item>附近</item>
+
+    </string-array>
+    <string-array name="friendtitle">
+
+        <item>朋友圈</item>
+        <item>好友</item>
+        <item>排行榜</item>
+
+        <item>附近的人</item>
+
+    </string-array>
+    <string-array name="Message">
+
+        <item>聊天</item>
+        <item>通知</item>
+
+    </string-array>
+    <string-array name="giftname">
+
+        <item>砰然心动</item>
+        <item>游轮</item>
+        <item>美女卡</item>
+        <item>吻</item>
+        <item>棒棒糖</item>
+        <item>狗粮</item>
+        <item>法拉利</item>
+        <item>单身狗</item>
+        <!--<item>超级礼花</item>-->
+        <!--<item>我的女王</item>-->
+        <!--<item>生生世世</item>-->
+        <!--<item>喜欢每个你</item>-->
+        <!--<item>壁咚</item>-->
+        <!--<item>丘比特</item>-->
+        <!--<item>迈凯伦</item>-->
+        <!--<item>飞机</item>-->
+
+    </string-array>
+    <string-array name="giftvalue">
+
+        <item>10金币</item>
+        <item>20金币</item>
+        <item>30金币</item>
+        <item>10金币</item>
+        <item>1111金币</item>
+        <item>111金币</item>
+        <item>10000金币</item>
+        <item>100000金币</item>
+        <!--<item>5210金币</item>-->
+        <!--<item>3344金币</item>-->
+        <!--<item>3344金币</item>-->
+        <!--<item>5211金币</item>-->
+        <!--<item>1999金币</item>-->
+        <!--<item>52000金币</item>-->
+        <!--<item>20000金币</item>-->
+        <!--<item>50000金币</item>-->
+    </string-array>
+    <string-array name="fayan">
+        <item>通过直播观看在线获得的经验是普通用户的2倍（5分钟6000经验）。</item>
+        <item>当主播选择“等级禁言”时，老爷特权用户将不会被禁言。
+复制于哔哩哔哩老爷特权详情。不信你可以自己去看。</item>
+        <item>在线宝箱重置次数会比普通用户多2次，每次重置都会获得额外的3分钟、6分钟、10分钟宝箱的领取次数。。</item>
+        <item>tom进来了。</item>
+        <item>购买成功后即送2万银瓜子。</item>
+        <item>获得红色月费老爷专属图标。</item>
+        <item>张三来了。</item>
+        <item>李四来了</item>
+
+    </string-array>
+</resources>

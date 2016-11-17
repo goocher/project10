@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#7080807b"
+             android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<ImageView
+    android:src="@mipmap/car"
+    android:id="@+id/imageView_gift_live"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/textView_name_gift_live"
+        android:text="12金币"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/textView_value_gift_live"
+        android:text="12金币"
+        android:textColor="#ff0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

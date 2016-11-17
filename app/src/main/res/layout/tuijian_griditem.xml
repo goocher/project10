@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/tuijian_griditem1_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tuijian_griditem1_user"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="#4fb6b2b2"
+            android:drawableLeft="@mipmap/icon_by_user"
+            android:text="user"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/tuijian_griditem1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="user"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</LinearLayout>

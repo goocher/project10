@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/icon_haoyou"
+    android:src="@mipmap/ic_launcher"
+    android:layout_width="30dp"
+    android:layout_height="30dp"/>
+    <TextView
+        android:text="hello"
+
+        android:id="@+id/nickName_haoyou"
+        android:layout_toRightOf="@id/icon_haoyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:text="2"
+        android:id="@+id/star_haoyou"
+        android:layout_below="@id/nickName_haoyou"
+        android:layout_toRightOf="@id/icon_haoyou"
+        android:drawableLeft="@mipmap/star"
+        android:background="#6cc0f1"
+        android:layout_marginLeft="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+
+        android:layout_toRightOf="@+id/nickName_haoyou"
+        android:id="@+id/container_gender_nearbyPerson"
+        android:background="#597eed"
+
+        android:gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="15dp">
+        <ImageView
+            android:id="@+id/gender_haoyou"
+            android:src="@mipmap/male"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:text="20"
+            android:id="@+id/age_haoyou"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_alignParentRight="true"
+
+        android:src="@mipmap/ic_more_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

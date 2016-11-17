@@ -1,0 +1,258 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             tools:context=".MainActivity" >
+
+
+
+    <io.vov.vitamio.widget.CenterLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </io.vov.vitamio.widget.CenterLayout>
+
+
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/sv_danmaku"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+<RelativeLayout
+    android:id="@+id/huaban_live"
+    android:visibility="invisible"
+    android:background="#00ded8de"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/baseline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/title_live"
+        android:layout_below="@id/baseline"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/gray_radius"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/icon_live"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:text="hello"
+                android:textColor="#fff"
+                android:layout_toRightOf="@id/icon_live"
+                android:id="@+id/nickname_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/count_live"
+                android:layout_toRightOf="@id/icon_live"
+                android:layout_below="@id/nickname_live"
+                android:text="1234"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_live"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/gray_radius"
+        android:layout_below="@id/title_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/meili_live"
+            android:text="魅力"
+            android:textColor="#eded30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/meilicount_live"
+            android:text="2233232"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.gooch.showtogether.Commen.PeriscopeLayout
+        android:id="@+id/btn_sendheart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="500dp">
+
+    </com.gooch.showtogether.Commen.PeriscopeLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/media_controller"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#07d1caca" >
+
+
+        <ImageView
+            android:id="@+id/btn_resume"
+            android:layout_width="30dp"
+            android:onClick="clickii"
+            android:clickable="true"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:src="@mipmap/fenxiang"
+            />
+        <ImageView
+            android:id="@+id/btn_send_image_text"
+            android:layout_width="30dp"
+            android:layout_centerInParent="true"
+            android:layout_height="30dp"
+            android:src="@mipmap/gift_live" />
+
+
+
+
+        <ImageView
+            android:id="@+id/btn_send_danmakus"
+            android:layout_width="30dp"
+
+            android:layout_height="wrap_content"
+             />
+        <ImageView
+            android:id="@+id/btn_sendheart_danmakus"
+            android:layout_width="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:src="@mipmap/blankheart"
+            />
+
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/btn_sendheart_danmakus"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+           android:src="@mipmap/blankheart"
+            android:text="" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_chat_live"
+        android:layout_above="@id/media_controller"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+
+
+
+    <!--<include android:id="@+id/media_controller"-->
+             <!---->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--layout="@layout/media_controller" />-->
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/cover_prepared"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/noLive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#09172b">
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="该直播已结束"
+            android:textColor="#fff"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/text0"
+            android:text="喜欢该直播，不错过TA的任何直播"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/noLive_guanzhu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_centerInParent="true"
+            android:background="@drawable/nolive_guanzhu_shape"
+            android:text="关注"/>
+
+        <Button
+            android:id="@+id/noLive_back"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noLive_guanzhu"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/nolive_back_shape"
+            android:text="退出"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="30dp"
+       android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/btn_hide"
+        android:visibility="gone"
+        android:src="@android:drawable/ic_dialog_dialer"
+        android:layout_height="30dp"
+        android:text="@string/hide_danmaku" />
+    <ImageView
+        android:src="@mipmap/abc_ic_clear_mtrl_alpha"
+        android:id="@+id/cancel_live"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
+
+
+
