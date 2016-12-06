@@ -21,7 +21,7 @@ public class BaseActivity extends AppCompatActivity implements Callback{
         if (actionBar!=null){
             actionBar.hide();
         }
-
+        
     }
 
     @Override

@@ -6,6 +6,7 @@ import com.gooch.showtogether.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.squareup.leakcanary.LeakCanary;
 
 import net.BaseRetrofit;
 
@@ -17,7 +18,12 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         BaseRetrofit.init();
-
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
 
         DisplayImageOptions defaultOptions = new DisplayImageOptions
                 .Builder()
